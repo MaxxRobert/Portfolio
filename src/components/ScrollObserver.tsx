@@ -34,7 +34,7 @@ const ScrollSection: React.FC<ScrollSectionProps> = ({ title, items }) => {
     <div ref={sectionRef} className="flex flex-col pd-8">
       <h3
         className={`text-sky-400 text-3xl transition-transform duration-700 ease-in-out ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+          isVisible ? '-translate-x-0 opacity-100' : '-translate-x-1/2 opacity-0'
         }`}
       >
         {title}
@@ -45,7 +45,7 @@ const ScrollSection: React.FC<ScrollSectionProps> = ({ title, items }) => {
           <p
             key={index}
             className={`transition-transform duration-700 ease-in-out delay-${index * 100} ${
-              isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+              isVisible ? '-translate-x-0 opacity-100' : '-translate-x-3/4 opacity-0'
             }`}
           >
             {item}
