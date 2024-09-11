@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     return (
         <>
-        <div className="navbar bg-base-300 sticky top-0">
+        <nav className="navbar bg-base-300 sticky top-0 z-50">
           <div className="navbar-start">
           </div>
           <div className="navbar-center">
@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <li><a className='link link-hover' href='#contact'>Contact</a></li>
             </ul>
           </div>
-        </div>
+        </nav>
         {children}
         <Footer></Footer>
         </>
