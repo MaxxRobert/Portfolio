@@ -65,20 +65,6 @@ export default function Index(){
             <div className="card-body">
               <h2 className="card-title text-2xl">My RPG</h2>
               <p className="text-lg">Development of an RPG-type game using CSFML, including inventory management, music implementation, and save system management.</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-outline btn-white shadow-md shadow-white" onClick={()=> {const modal = document.getElementById('my_modal_1');
-                   if (modal) {(modal as HTMLDialogElement).showModal()}}}>Show more</button>
-                <dialog id="my_modal_1" className="modal">
-                  <div className="modal-box">
-                    <h3 className="font-bold text-lg">Hello!</h3>
-                    <div className="modal-action">
-                      <form method="dialog">
-                        <button className="btn">Close</button>
-                      </form>
-                    </div>
-                  </div>
-                </dialog>
-              </div>
             </div>
           </div>
           <div className="card card-compact bg-base-100 w-96 shadow-lg hover:scale-105 transition-transform shadow-sky-400 h-full">
@@ -91,21 +77,6 @@ export default function Index(){
             <div className="card-body">
               <h2 className="card-title text-2xl">Corewar</h2>
               <p className="text-lg">Development of a Corewar program, a game where robots battle by modifying memory to destroy each other in a virtual machine.</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-outline btn-white shadow-md shadow-white" onClick={()=> {const modal = document.getElementById('my_modal_2');
-                        if (modal) {
-                        (modal as HTMLDialogElement).showModal()}}}>Show more</button>
-                <dialog id="my_modal_2" className="modal">
-                  <div className="modal-box">
-                    <h3 className="font-bold text-lg">Hello!</h3>
-                    <div className="modal-action">
-                      <form method="dialog">
-                        <button className="btn">Close</button>
-                      </form>
-                    </div>
-                  </div>
-                </dialog>
-              </div>
             </div>
           </div>
           <div className="card card-compact bg-base-100 w-96 shadow-lg hover:scale-105 transition-transform shadow-sky-400 h-full">
@@ -118,21 +89,6 @@ export default function Index(){
             <div className="card-body">
               <h2 className="card-title text-2xl">42sh</h2>
               <p className="text-lg">Recreation of a shell including several built-ins (cd, environment variables, alias, history, etc.) in C.</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-outline btn-white shadow-md shadow-white" onClick={()=> {const modal = document.getElementById('my_modal_3');
-                        if (modal) {
-                        (modal as HTMLDialogElement).showModal()}}}>Show more</button>
-                <dialog id="my_modal_3" className="modal">
-                  <div className="modal-box">
-                    <h3 className="font-bold text-lg">Hello!</h3>
-                    <div className="modal-action">
-                      <form method="dialog">
-                        <button className="btn">Close</button>
-                      </form>
-                    </div>
-                  </div>
-                </dialog>
-              </div>
             </div>
           </div>
           <div className="card card-compact bg-base-100 w-96 shadow-lg hover:scale-105 transition-transform shadow-sky-400 h-full">
@@ -144,21 +100,6 @@ export default function Index(){
             <div className="card-body">
               <h2 className="card-title text-2xl">Geo-Music</h2>
               <p className="text-lg">Development of a website featuring an interactive world map, with a database of music, while interacting with the Spotify API.</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-outline btn-white shadow-md shadow-white" onClick={()=> {const modal = document.getElementById('my_modal_4');
-                        if (modal) {
-                        (modal as HTMLDialogElement).showModal()}}}>Show more</button>
-                <dialog id="my_modal_4" className="modal">
-                  <div className="modal-box">
-                    <h3 className="font-bold text-lg">Hello!</h3>
-                    <div className="modal-action">
-                      <form method="dialog">
-                        <button className="btn">Close</button>
-                      </form>
-                    </div>
-                  </div>
-                </dialog>
-              </div>
             </div>
           </div>
           </div>
