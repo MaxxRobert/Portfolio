@@ -1,4 +1,5 @@
 import ScrollSection from '../components/ScrollObserver';
+import ContactForm from '../components/Contact';
 export default function Index(){
     return (
         <>
@@ -104,6 +105,7 @@ export default function Index(){
           </div>
           </div>
         </section>
+        <ContactForm/>
         </>
     )
 }
