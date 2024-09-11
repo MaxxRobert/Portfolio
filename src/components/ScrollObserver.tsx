@@ -1,8 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 
-const ScrollSection = ({ title, items }) => {
+interface ScrollSectionProps {
+  title: string;
+  items: string[];
+}
+
+const ScrollSection: React.FC<ScrollSectionProps> = ({ title, items }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,7 +34,7 @@ const ScrollSection = ({ title, items }) => {
     <div ref={sectionRef} className="flex flex-col pd-8">
       <h3
         className={`text-sky-400 text-3xl transition-transform duration-700 ease-in-out ${
-          isVisible ? '-translate-x-0 opacity-100' : '-translate-x-64 opacity-0'
+          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}
       >
         {title}
@@ -39,8 +44,8 @@ const ScrollSection = ({ title, items }) => {
         {items.map((item, index) => (
           <p
             key={index}
-            className={`transition-transform duration-1000 ease-in-out delay-${index * 100} ${
-              isVisible ? '-translate-x-0 opacity-100' : '-translate-x-60 opacity-0'
+            className={`transition-transform duration-700 ease-in-out delay-${index * 100} ${
+              isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
             {item}
