@@ -20,6 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <li><a className='link link-hover' href='#about-me'>About me</a></li>
               <li><a className='link link-hover' href='#skills'>Skills</a></li>
               <li><a className='link link-hover' href='#portfolio'>Portfolio</a></li>
+              <li><a className='link link-hover' href='#contact'>Contact</a></li>
             </ul>
           </div>
         </div>
