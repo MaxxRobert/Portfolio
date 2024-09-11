@@ -1,5 +1,6 @@
 import ScrollSection from '../components/ScrollObserver';
 import ContactForm from '../components/Contact';
+import ProjCard from '../components/ProjCard';
 export default function Index(){
     return (
         <>
@@ -55,54 +56,24 @@ export default function Index(){
           </div>
         </section>
         <section id='portfolio'className="pt-24 pb-24 bg-[#0a0a0a]">
-        <h2 className="flex justify-center mb-20 font-bold text-4xl text-sky-400 text-shadow">Portfolio...</h2>
-        <div className="grid lg:grid-cols-2 sm:grid-cols-1 auto-rows-auto gap-16 place-items-center">
-          <div className="card card-compact bg-base-100 w-96 hover:scale-105 transition-transform shadow-lg shadow-sky-400 h-full">
-            <figure>
-              <img
-                src="image/rpg.png"
-                alt="RPG" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-2xl">My RPG</h2>
-              <p className="text-lg">Development of an RPG-type game using CSFML, including inventory management, music implementation, and save system management.</p>
-            </div>
-          </div>
-          <div className="card card-compact bg-base-100 w-96 shadow-lg hover:scale-105 transition-transform shadow-sky-400 h-full">
-            <figure>
-              <img
-              className="w-full max-h-64"
-                src="image/corewar.png"
-                alt="Corewar" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-2xl">Corewar</h2>
-              <p className="text-lg">Development of a Corewar program, a game where robots battle by modifying memory to destroy each other in a virtual machine.</p>
-            </div>
-          </div>
-          <div className="card card-compact bg-base-100 w-96 shadow-lg hover:scale-105 transition-transform shadow-sky-400 h-full">
-            <figure>
-              <img
-                className="max-h-64 w-full"
-                src="/image/shell.png"
-                alt="42sh" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-2xl">42sh</h2>
-              <p className="text-lg">Recreation of a shell including several built-ins (cd, environment variables, alias, history, etc.) in C.</p>
-            </div>
-          </div>
-          <div className="card card-compact bg-base-100 w-96 shadow-lg hover:scale-105 transition-transform shadow-sky-400 h-full">
-            <figure>
-              <img
-                src="/image/geo-music.png"
-                alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-2xl">Geo-Music</h2>
-              <p className="text-lg">Development of a website featuring an interactive world map, with a database of music, while interacting with the Spotify API.</p>
-            </div>
-          </div>
+          <h2 className="flex justify-center mb-20 font-bold text-4xl text-sky-400 text-shadow">Portfolio...</h2>
+          <div className="grid lg:grid-cols-2 sm:grid-cols-1 auto-rows-auto gap-16 place-items-center">
+            <ProjCard
+              src_img='image/rpg.png'
+              title='My RPG'
+              item='Development of an RPG-type game using CSFML, including inventory management, music implementation, and save system management.'/>
+            <ProjCard
+              src_img='image/corewar.png'
+              title='Corewar'
+              item='Development of a Corewar program, a game where robots battle by modifying memory to destroy each other in a virtual machine.'/>
+            <ProjCard
+              src_img='/image/shell.png'
+              title='42sh'
+              item='Recreation of a shell including several built-ins (cd, environment variables, alias, history, etc.) in C.'/>
+            <ProjCard
+              src_img='/image/geo-music.png'
+              title='Geo-Music'
+              item='Development of a website featuring an interactive world map, with a database of music, while interacting with the Spotify API.'/>
           </div>
         </section>
         <ContactForm/>
