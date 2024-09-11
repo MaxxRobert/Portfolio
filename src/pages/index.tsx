@@ -14,7 +14,7 @@ export default function Index(){
         <section id="about-me" className="pt-24 bg-[#0a0a0a]">
             <div className="flex items-center flex-col gap-16">
               <h2 className="font-bold text-4xl text-sky-400 text-shadow">About me...</h2>
-              <img src="https://www.studio-pop-art.fr/cdn/shop/products/portrait-homme-465158.webp?v=1690383976&width=1445" className="w-full max-w-64"></img>
+              <img src="image/profile.jpg" className="w-full max-w-64"></img>
               <div id='paragrph' className="flex flex-col gap-5 text-left font-bold max-w-screen-xl text-xl">
                 <p>Hello,</p>
                 <p>I am a student at Epitech, currently living in Lyon. During my studies, I have gained strong programming skills. I have also had the opportunity to work on various academic and personal projects, where I was able to develop web applications as well as information systems.</p>
